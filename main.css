@@ -23,7 +23,7 @@ html {
 
 /*  This is the root element where we can apply all changes at one place */
 
-.root
+:root
 {
   /* colors */
   /* shadowlord - color shade generator */
@@ -62,7 +62,7 @@ html {
   --smallText: 0.7em;
 
 /*  Rest of the var */
---backgroundColor: var(--primary-700);
+--backgroundColor: var(--primary-200);
 --textColor:var(--grey-300);
 --borderRadius:0.25rem;
 --letterSpacing: 1px;
