@@ -1,9 +1,9 @@
 /* Temprory */
-/* 
+/*
  body
 {
     padding: 3rem 4rem;
-    background-color: rgb(16, 207, 10)
+    
 }
 */
 
@@ -62,8 +62,8 @@ html {
   --smallText: 0.7em;
 
 /*  Rest of the var */
---backgroundColor: var(var(--grey-300));
---textColor:var(--primary-700);
+--backgroundColor:var(--grey-100);
+--textColor:var(--primary-600);
 --borderRadius:0.25rem;
 --letterSpacing: 1px;
 --transition:0.3s ease-in-out all;
@@ -208,3 +208,98 @@ li
   color: var(--green-dark);
   background-color: var(--green-light);
 }
+
+/* Form */
+
+.form
+{
+  width: 90vw;
+  max-width: var(--fixed-width);
+  background: var(--white);
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  padding: 2rem 2.5rem;
+  margin: 3rem auto;
+}
+
+.form-label
+{
+  display: block;
+  font-size: var(--smallText);
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  font-weight: bolder;
+}
+
+.form-input, 
+.form-textarea
+{
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  background: var(--backgroundColor);
+  border-radius: var(--borderRadius); 
+  border: 1px solid var(--grey-200);  
+} 
+
+.form-row
+{
+  margin: 1rem;
+}
+
+.form-textarea
+{
+  height: 7rem;
+}
+::placeholder
+{
+  font-family: inherit;
+  color: var(--grey-400);
+}
+
+.form-alert
+{
+  letter-spacing: var(--letterSpacing);
+  color: var(--red-dark);
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.btn-block
+{
+      width: 100%;
+}
+
+/* Loading */
+.loading
+{
+   width: 6rem;
+   height: 6rem;
+   margin: 0 auto;
+   border: 6px solid var(--grey-400);
+   border-radius: 50%;   
+   border-top-color: var(--primary-700);
+   animation: spinner 1s infinite linear;
+}
+
+/* Animation */
+@keyframes spinner
+{
+  to{
+    transform: rotate(360deg);
+  }
+}
+/* Title */
+.title
+{
+  text-align: center;
+}
+.title-underline
+{
+    background: var(--primary-500);
+    height: 0.25rem;
+    width: 11rem;
+    margin: 0 auto;
+    margin-top: -1rem;
+}
+
